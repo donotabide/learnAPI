@@ -3,11 +3,55 @@
   <head>
     <meta charset="utf-8">
     <title>impact fellowship</title>
+	<style>
+		@import url('http://fonts.googleapis.com/css?family=Open+Sans');
+		body{
+			font-family: 'Open Sans', serif;
+			background: #2c3e50;
+			color: #ecf0f1;
+		}
+
+		header{
+			font-size: 2em;
+			text-align: center;
+		}
+
+		button{
+			border-radius: 20px;
+			font: inherit;
+			background-color: #ecf0f1;
+			color: #2c3e50;
+			padding-left: 2em;
+			padding-right: 2em;
+			margin: 2em;
+		}
+
+		button:hover{
+			border-radius: 20px;
+			font: inherit;
+			background-color: #ecf0f1;
+			-webkit-transform: translate(0px, -40px);
+			transform: translate(0px, -40px);
+		}
+
+		#homes{
+			width: 100px;
+			position: absolute;
+			vertical-align: middle;
+		}
+
+		#info{
+			padding-left: 15em;
+			padding-top: 2em;
+		}
+
+
+	</style>
   </head>
   <body>
-    <div id="greeting">oh hey, there</div>
+    <header id="greeting">oh hey, there</header>
 	<div id="homes"></div>
-	<script src="data.js"></script>
+	<div id="info"></div>
     <script src="index.js"></script>
   </body>
 </html>
