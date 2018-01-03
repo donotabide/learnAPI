@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>impact fellowship</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 	<style>
 		@import url('http://fonts.googleapis.com/css?family=Open+Sans');
 		body{
@@ -16,7 +19,7 @@
 			text-align: center;
 		}
 
-		button{
+		/* button{
 			border-radius: 20px;
 			font: inherit;
 			background-color: #ecf0f1;
@@ -30,27 +33,38 @@
 			border-radius: 20px;
 			font: inherit;
 			background-color: #ecf0f1;
-			-webkit-transform: translate(0px, -40px);
-			transform: translate(0px, -40px);
-		}
+		/* -webkit-transform: translate(0px, -40px);
+			transform: translate(0px, -40px); */
+		} */
 
-		#homes{
+	 #homes{
 			width: 100px;
 			position: absolute;
 			vertical-align: middle;
 		}
-
 		#info{
 			padding-left: 15em;
 			padding-top: 2em;
+      vertical-align: center;
 		}
 
 
 	</style>
   </head>
   <body>
-    <header id="greeting">oh hey, there</header>
-	<div id="homes"></div>
+    <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#" id="greeting">Shelters in NYC</a>
+      </div>
+      <ul class="nav navbar-nav" id="homes">
+        <li class="active"><a href="#">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+	<!-- <div id="homes"></div> -->
 	<div id="info"></div>
     <script src="index.js"></script>
   </body>
